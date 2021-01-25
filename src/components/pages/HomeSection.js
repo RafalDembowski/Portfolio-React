@@ -5,9 +5,6 @@ function HomeSection() {
     return (
         <>
         <div className="container">
-            <div className="waves-svg">
-
-            </div>
             <div className="description-container">
                 <h1>Hello</h1>
 

@@ -1,0 +1,54 @@
+.project:not(:last-child){
+    margin-bottom: 75px;
+}
+.project-description{
+    display: flex;
+    justify-content: space-between;
+}
+.page-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.page-title{
+    width:100%;
+}
+.page-title h1{
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+.image-project{
+    max-width: 1266px;
+}
+@media screen and (min-width: 1300px){
+.page-title{
+    width: 1266px;
+}
+}
+@media screen and (max-width: 1350px){
+    .page-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .short-description{
+        width: 41%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .page-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    .project-description{
+        flex-direction: column;
+    }
+    .short-description{
+        width: 100%;
+    }
+    .project-title h2{
+        font-weight: normal;
+    }
+}

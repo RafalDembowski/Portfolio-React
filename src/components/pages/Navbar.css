@@ -14,21 +14,15 @@
     height: 80px;
 }
 .navbar-logo {
-    color: #fff;
+    color: black;
     cursor: pointer;
     text-decoration: none;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    transform: translate(18%, 50%);
     transition: all 0.6s ease;
-}
-.navbar-logo.active{
-    color:black;
-    transition: all 0.6s ease;
-}
-.menu-icon.active{
-    color: black;
+    font-weight: bold;
 }
 .navbar-logo , .menu-icon, .menu-icon svg{
     z-index: 999;

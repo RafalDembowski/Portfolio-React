@@ -17,26 +17,7 @@
 .description-second p{
     margin-top: 10px;
 }
-.waves-svg{
-    display: none;
-}
 @media screen and (min-width: 650px){
-    .waves-svg{
-        display: block;
-        background-image: url(/src/waves.svg);
-        height: 398px;
-        width: 400px;
-        position: absolute;
-        left: 20%;
-        z-index: 1;
-    }
-    .description-container {
-        background-color: transparent;
-        z-index: 9999;
-    }
-    .description-container h1, .description-second, .description-second p, .description-second h2{
-        background-color: transparent;
-    }
     .description-container h1{
         font-size: 5rem;
     }

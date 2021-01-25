@@ -14,11 +14,11 @@ function Navbar() {
         <>
          <div className="navbar">
              <div className="navbar-container">
-                 <Link to='/' className={ click ? "navbar-logo active" : "navbar-logo"} onClick={closeMenu}>
+                 <Link to='/' className="navbar-logo" onClick={closeMenu}>
                      Dembowski
                  </Link>
              </div>
-             <div className={ click ? "menu-icon active" : "menu-icon"} onClick={handleClick}>
+             <div className="menu-icon"onClick={handleClick}>
                  {click ? <FaTimes /> : <FaBars />}
              </div>
              <ul className={click ? 'nav-menu active' : 'nav-menu '}>
