@@ -14,7 +14,7 @@ function Navbar() {
         <>
          <div className="navbar">
              <div className="navbar-container">
-                 <Link to='/' className={ click ? "navbar-logo active" : "navbar-logo"}>
+                 <Link to='/' className={ click ? "navbar-logo active" : "navbar-logo"} onClick={closeMenu}>
                      Dembowski
                  </Link>
              </div>
@@ -23,22 +23,22 @@ function Navbar() {
              </div>
              <ul className={click ? 'nav-menu active' : 'nav-menu '}>
                  <li className="nav-item">
-                    <Link to='/' className='nav-links'> 
+                    <Link to='/' className='nav-links' onClick={closeMenu}> 
                         Strona główna
                     </Link>
                  </li>
                  <li className="nav-item">
-                    <Link to='/AboutMe' className='nav-links'> 
+                    <Link to='/AboutMe' className='nav-links' onClick={closeMenu}> 
                         O mnie
                     </Link>
                  </li>
                  <li className="nav-item">
-                    <Link to='/Projects' className='nav-links'> 
+                    <Link to='/Projects' className='nav-links' onClick={closeMenu}> 
                         Projekty
                     </Link>
                  </li>
                  <li className="nav-item">
-                    <Link to='/Contact' className='nav-links'> 
+                    <Link to='/Contact' className='nav-links' onClick={closeMenu}> 
                         Kontakt
                     </Link>
                  </li>

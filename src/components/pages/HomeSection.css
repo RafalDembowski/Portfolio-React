@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    height: 70vh;
+}
+.description-container{
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+.description-second h2{
+    margin-top: 15px;
+    width: 150px;
+    font-weight: normal;
+}
+.description-second p{
+    margin-top: 10px;
+}
+.waves-svg{
+    display: none;
+}
+@media screen and (min-width: 650px){
+    .waves-svg{
+        display: block;
+        background-image: url(/src/waves.svg);
+        height: 398px;
+        width: 400px;
+        position: absolute;
+        left: 20%;
+        z-index: 1;
+    }
+    .description-container {
+        background-color: transparent;
+        z-index: 9999;
+    }
+    .description-container h1, .description-second, .description-second p, .description-second h2{
+        background-color: transparent;
+    }
+    .description-container h1{
+        font-size: 5rem;
+    }
+    .description-second{
+        margin-left: 70px;
+    }
+}
+@media screen and (min-width: 450px) {
+
+    .container{
+        justify-content: center;
+    }
+    .description-container{
+        width: 550px;
+    }
+    .description-second p{
+        width: 400px;
+    }
+    .description-second h2{
+        width: 300px;
+    }
+
+}
