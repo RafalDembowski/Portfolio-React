@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css';
 import { Link } from 'react-router-dom';
-import { projectsData, roomMateObj } from './ProjectPage/projectsData'
+import { projectsData, roomMateObj } from './ProjectsData/projectsData'
 
 function Projects() {
     return (

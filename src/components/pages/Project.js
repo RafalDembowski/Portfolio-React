@@ -3,7 +3,7 @@ import './Project.css'
 import './Projects.css';
 import './HomeSection.css'
 import { AiFillGithub } from  'react-icons/ai'
-import { projectsData, roomMateObj } from './ProjectPage/projectsData'
+import { projectsData, roomMateObj } from './ProjectsData/projectsData'
 
 function Project (
     { match, location }
