@@ -28,11 +28,6 @@ function Navbar() {
                     </Link>
                  </li>
                  <li className="nav-item">
-                    <Link to='/AboutMe' className='nav-links' onClick={closeMenu}> 
-                        O mnie
-                    </Link>
-                 </li>
-                 <li className="nav-item">
                     <Link to='/Projects' className='nav-links' onClick={closeMenu}> 
                         Projekty
                     </Link>

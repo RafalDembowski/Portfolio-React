@@ -7,7 +7,8 @@ export const projectsData = [
     technologics: 'ASP .NET MVC 5 HTML 5 JavaScript CSS' , 
     githubLink: 'https://github.com/RafalDembowski/RoomMate', 
     liveLink: 'https://github.com/RafalDembowski/RoomMate', 
-    img: '/RafalDembowski/portfolio-react.git/static/media/image1.b8bf44d5.png'
+    largeImage: '/RafalDembowski/portfolio-react.git/static/media/image1.b8bf44d5.png',
+    tinyImage: '/RafalDembowski/portfolio-react.git/static/media/image1Tiny.4b5d46ec.png'
     },
     {
         projectName: 'Dupa', 
@@ -17,6 +18,7 @@ export const projectsData = [
         technologics: 'ASP .NET MVC 5 HTML 5 JavaScript CSS' , 
         githubLink: 'https://github.com/RafalDembowski/RoomMate', 
         liveLink: 'https://github.com/RafalDembowski/RoomMate', 
-        img: '/RafalDembowski/portfolio-react.git/static/media/image2.24e01c42.png'
+        largeImage: '/RafalDembowski/portfolio-react.git/static/media/image2.24e01c42.png',
+        tinyImage: '/RafalDembowski/portfolio-react.git/static/media/image2Tiny.f551e091.png'
     }
 ]

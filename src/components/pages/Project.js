@@ -4,12 +4,15 @@ import './Projects.css';
 import './HomeSection.css'
 import { AiFillGithub } from  'react-icons/ai'
 import { projectsData, roomMateObj } from './ProjectsData/projectsData'
+import ProgressiveImage from '../ProgressiveImage';
+
 
 function Project (
     { match, location }
 ) {
 
     const { params: { projectId } } = match;
+    const [src, { blur }] = ProgressiveImage( projectsData[projectId - 1].tinyImage, projectsData[projectId - 1].largeImage);
 
     return (
         <>
@@ -19,9 +22,16 @@ function Project (
                     {projectsData[projectId - 1].projectName}
                 </h1>
             </div>
+            <div className="project-container">
                 <div className="project">
                 <div className="image-project">
-                        <img src={projectsData[projectId - 1].img}></img>
+                    <img
+                        src={src}
+                        style={{
+                        filter: blur ? "blur(20px)" : "none",
+                        transition: blur ? "none" : "filter 0.7s ease-out"
+                        }}
+                      />
                 </div>
                 <div className="project-description">
                         <div className="project-title"> 
@@ -57,6 +67,7 @@ function Project (
 
                 </div>
                 </div>
+            </div>
             </div>
         </>
     )
