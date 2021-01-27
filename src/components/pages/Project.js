@@ -5,15 +5,20 @@ import './HomeSection.css'
 import { AiFillGithub } from  'react-icons/ai'
 import { projectsData, roomMateObj } from './ProjectsData/projectsData'
 import ProgressiveImage from '../ProgressiveImage';
-
+import NotFound from './NotFound';
 
 function Project (
     { match, location }
 ) {
-
     const { params: { projectId } } = match;
-    const [src, { blur }] = ProgressiveImage( projectsData[projectId - 1].tinyImage, projectsData[projectId - 1].largeImage);
 
+    if( projectsData[projectId - 1] === undefined){
+        return <NotFound />;
+    }
+    
+
+    const [src, { blur }] = ProgressiveImage( projectsData[projectId - 1].tinyImage, projectsData[projectId - 1].largeImage);
+    
     return (
         <>
             <div className="page-container">
@@ -70,7 +75,7 @@ function Project (
             </div>
             </div>
         </>
-    )
+    )              
 }
 
 export default Project
